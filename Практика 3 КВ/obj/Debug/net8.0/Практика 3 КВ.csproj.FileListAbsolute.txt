@@ -1,0 +1,14 @@
+C:\Users\1\source\repos\Практика 3 КВ\Практика 3 КВ\bin\Debug\net8.0\Практика 3 КВ.exe
+C:\Users\1\source\repos\Практика 3 КВ\Практика 3 КВ\bin\Debug\net8.0\Практика 3 КВ.deps.json
+C:\Users\1\source\repos\Практика 3 КВ\Практика 3 КВ\bin\Debug\net8.0\Практика 3 КВ.runtimeconfig.json
+C:\Users\1\source\repos\Практика 3 КВ\Практика 3 КВ\bin\Debug\net8.0\Практика 3 КВ.dll
+C:\Users\1\source\repos\Практика 3 КВ\Практика 3 КВ\bin\Debug\net8.0\Практика 3 КВ.pdb
+C:\Users\1\source\repos\Практика 3 КВ\Практика 3 КВ\obj\Debug\net8.0\Практика 3 КВ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1\source\repos\Практика 3 КВ\Практика 3 КВ\obj\Debug\net8.0\Практика 3 КВ.AssemblyInfoInputs.cache
+C:\Users\1\source\repos\Практика 3 КВ\Практика 3 КВ\obj\Debug\net8.0\Практика 3 КВ.AssemblyInfo.cs
+C:\Users\1\source\repos\Практика 3 КВ\Практика 3 КВ\obj\Debug\net8.0\Практика 3 КВ.csproj.CoreCompileInputs.cache
+C:\Users\1\source\repos\Практика 3 КВ\Практика 3 КВ\obj\Debug\net8.0\Практика 3 КВ.dll
+C:\Users\1\source\repos\Практика 3 КВ\Практика 3 КВ\obj\Debug\net8.0\refint\Практика 3 КВ.dll
+C:\Users\1\source\repos\Практика 3 КВ\Практика 3 КВ\obj\Debug\net8.0\Практика 3 КВ.pdb
+C:\Users\1\source\repos\Практика 3 КВ\Практика 3 КВ\obj\Debug\net8.0\Практика 3 КВ.genruntimeconfig.cache
+C:\Users\1\source\repos\Практика 3 КВ\Практика 3 КВ\obj\Debug\net8.0\ref\Практика 3 КВ.dll
