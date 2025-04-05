@@ -14,11 +14,11 @@ namespace задание_18
             Console.WriteLine("Введите натуральное число (год):");
             int n = int.Parse(Console.ReadLine());
 
-            string result = (n % 4 == 0 && (n % 100 != 0 || n % 400 == 0)) ?
+            string res = (n % 4 == 0 && (n % 100 != 0 || n % 400 == 0)) ?
                             $"{n} год является високосным." :
                             $"{n} год не является високосным.";
 
-            Console.WriteLine(result);
+            Console.WriteLine(res);
         }
     }
 }

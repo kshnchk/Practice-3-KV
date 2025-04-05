@@ -1,0 +1,15 @@
+C:\Users\1\Desktop\Учеба\Основы проектирования баз данных\VS\ПР 3 КВ\задание 16\bin\Debug\net8.0\задание 16.exe
+C:\Users\1\Desktop\Учеба\Основы проектирования баз данных\VS\ПР 3 КВ\задание 16\bin\Debug\net8.0\задание 16.deps.json
+C:\Users\1\Desktop\Учеба\Основы проектирования баз данных\VS\ПР 3 КВ\задание 16\bin\Debug\net8.0\задание 16.runtimeconfig.json
+C:\Users\1\Desktop\Учеба\Основы проектирования баз данных\VS\ПР 3 КВ\задание 16\bin\Debug\net8.0\задание 16.dll
+C:\Users\1\Desktop\Учеба\Основы проектирования баз данных\VS\ПР 3 КВ\задание 16\bin\Debug\net8.0\задание 16.pdb
+C:\Users\1\Desktop\Учеба\Основы проектирования баз данных\VS\ПР 3 КВ\задание 16\obj\Debug\net8.0\задание 16.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1\Desktop\Учеба\Основы проектирования баз данных\VS\ПР 3 КВ\задание 16\obj\Debug\net8.0\задание 16.AssemblyInfoInputs.cache
+C:\Users\1\Desktop\Учеба\Основы проектирования баз данных\VS\ПР 3 КВ\задание 16\obj\Debug\net8.0\задание 16.AssemblyInfo.cs
+C:\Users\1\Desktop\Учеба\Основы проектирования баз данных\VS\ПР 3 КВ\задание 16\obj\Debug\net8.0\задание 16.csproj.CoreCompileInputs.cache
+C:\Users\1\Desktop\Учеба\Основы проектирования баз данных\VS\ПР 3 КВ\задание 16\obj\Debug\net8.0\задание 16.sourcelink.json
+C:\Users\1\Desktop\Учеба\Основы проектирования баз данных\VS\ПР 3 КВ\задание 16\obj\Debug\net8.0\задание 16.dll
+C:\Users\1\Desktop\Учеба\Основы проектирования баз данных\VS\ПР 3 КВ\задание 16\obj\Debug\net8.0\refint\задание 16.dll
+C:\Users\1\Desktop\Учеба\Основы проектирования баз данных\VS\ПР 3 КВ\задание 16\obj\Debug\net8.0\задание 16.pdb
+C:\Users\1\Desktop\Учеба\Основы проектирования баз данных\VS\ПР 3 КВ\задание 16\obj\Debug\net8.0\задание 16.genruntimeconfig.cache
+C:\Users\1\Desktop\Учеба\Основы проектирования баз данных\VS\ПР 3 КВ\задание 16\obj\Debug\net8.0\ref\задание 16.dll
