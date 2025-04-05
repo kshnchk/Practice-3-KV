@@ -10,13 +10,7 @@ namespace задание_27
         static void Main(string[] args)
         {
             Console.WriteLine("Введите количество месяцев с начала 1990 года (0 или положительное число):");
-            int m = Convert.ToInt32(Console.ReadLine());
-
-            if (m < 0)
-            {
-                Console.WriteLine("Некорректный ввод. Введите неотрицательное число.");
-                return;
-            }
+            int m = Convert.ToInt32(Console.ReadLine());                                        
 
             int t = m + 1;
             int i = t % 12;

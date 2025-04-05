@@ -6,103 +6,136 @@ m (порядковый номер месяца) и n (число). По зад�
 декабря).
 */
 
+using System.Text.RegularExpressions;
+
 namespace задание_28
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите номер месяца :");
-            int m = Convert.ToInt32(Console.ReadLine());
+            int m = 0, d = 0;
 
-            Console.WriteLine("Введите число :");
-            int d = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Введите номер месяца (1-12): ");
+            string im = Console.ReadLine();
 
-
-            if (m < 1 || m > 12 || d < 1 || d > 31)
+            // Проверка, что введенное значение является числом
+            if (Regex.IsMatch(im, @"^\d+$"))
             {
-                Console.WriteLine("Некорректный ввод. Проверьте номер месяца и число.");
-                return;
+                m = Convert.ToInt32(im);
             }
 
-
-            int daysInMonth = 31;
-
-
-            if (m == 1 || m == 3 || m == 5 || m == 7 || m == 8 || m == 10 || m == 12)
-                daysInMonth = 31;
-            else if (m == 4 || m == 6 || m == 9 || m == 11)
-                daysInMonth = 30;
-            else if (m == 2)
-                daysInMonth = 28;
-
-
-            int pd = d;
-            int pm = m;
-
-            if (d == 1)
+            if (m < 1 || m > 12)
             {
+                Console.WriteLine("Некорректный номер месяца.");
+            }
+            else
+            {
+                Console.Write("Введите число (1-31): ");
+                string id = Console.ReadLine();
 
-                pm--;
-                if (pm < 1)
+                // Проверка, что введенное значение является числом
+                if (Regex.IsMatch(id, @"^\d+$"))
                 {
-                    pm = 12;
+                    d = Convert.ToInt32(id);
                 }
-                pd = getDaysInPreviousMonth(pm);
-            }
-            else
-            {
-                pd--;
-            }
-            Console.WriteLine($"Предыдущий день: {pd} {getMonthName(pm)}");
 
-            int nd = d;
-            int nm = m;
-
-            if (d == daysInMonth)
-            {
-
-                nd = 1;
-                nm++;
-                if (nm > 12)
+                if (d < 1 || d > 31)
                 {
-                    nm = 1;
+                    Console.WriteLine("Некорректное число.");
+                }
+                else
+                {
+                    int dim;
+                    // Определение количества дней в месяце
+                    if (m == 2)
+                        dim = 28;
+                    else if (m == 4 || m == 6 || m == 9 || m == 11)
+                        dim = 30;
+                    else
+                        dim = 31;
+
+                    if (d > dim)
+                    {
+                        Console.WriteLine("Некорректное число для указанного месяца.");
+                    }
+                    else
+                    {
+                        int pd, pm;
+                        // Вычисление предыдущего дня
+                        if (d > 1)
+                        {
+                            pd = d - 1;
+                            pm = m;
+                        }
+                        else
+                        {
+                            pm = m - 1;
+                            if (pm < 1)
+                            {
+                                pm = 12;
+                                pd = 31;
+                            }
+                            else
+                            {
+                                pd = (pm == 2) ? 28 : (pm == 4 || pm == 6 || pm == 9 || pm == 11) ? 30 : 31;
+                            }
+                        }
+
+                        // Вывод предыдущего дня
+                        Console.Write($"а) Предыдущий день: {pd} ");
+                        if (pm == 1) Console.WriteLine("января");
+                        else if (pm == 2) Console.WriteLine("февраля");
+                        else if (pm == 3) Console.WriteLine("марта");
+                        else if (pm == 4) Console.WriteLine("апреля");
+                        else if (pm == 5) Console.WriteLine("мая");
+                        else if (pm == 6) Console.WriteLine("июня");
+                        else if (pm == 7) Console.WriteLine("июля");
+                        else if (pm == 8) Console.WriteLine("августа");
+                        else if (pm == 9) Console.WriteLine("сентября");
+                        else if (pm == 10) Console.WriteLine("октября");
+                        else if (pm == 11) Console.WriteLine("ноября");
+                        else if (pm == 12) Console.WriteLine("декабря");
+
+                        int nd, nm;
+                        // Вычисление следующего дня
+                        if (d < dim)
+                        {
+                            nd = d + 1;
+                            nm = m;
+                        }
+                        else
+                        {
+                            nm = m + 1;
+                            if (nm > 12)
+                            {
+                                nm = 1;
+                                nd = 1;
+                            }
+                            else
+                            {
+                                nd = 1;
+                            }
+                        }
+
+                        // Вывод следующего дня
+                        Console.Write($"б) Следующий день: {nd} ");
+                        if (nm == 1) Console.WriteLine("января");
+                        else if (nm == 2) Console.WriteLine("февраля");
+                        else if (nm == 3) Console.WriteLine("марта");
+                        else if (nm == 4) Console.WriteLine("апреля");
+                        else if (nm == 5) Console.WriteLine("мая");
+                        else if (nm == 6) Console.WriteLine("июня");
+                        else if (nm == 7) Console.WriteLine("июля");
+                        else if (nm == 8) Console.WriteLine("августа");
+                        else if (nm == 9) Console.WriteLine("сентября");
+                        else if (nm == 10) Console.WriteLine("октября");
+                        else if (nm == 11) Console.WriteLine("ноября");
+                        else if (nm == 12) Console.WriteLine("декабря");
+                    }
+
                 }
             }
-            else
-            {
-
-                nd++;
-            }
-            Console.WriteLine($"Следующий день: {nd} {getMonthName(nm)}");
-        }
-
-        static int getDaysInPreviousMonth(int month)
-        {
-
-            if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)
-                return 31;
-            else if (month == 4 || month == 6 || month == 9 || month == 11)
-                return 30;
-            else
-                return 28;
-        }
-
-        static string getMonthName(int month)
-        {
-            if (month == 1) return "январь";
-            if (month == 2) return "февраль";
-            if (month == 3) return "март";
-            if (month == 4) return "апрель";
-            if (month == 5) return "май";
-            if (month == 6) return "июнь";
-            if (month == 7) return "июль";
-            if (month == 8) return "август";
-            if (month == 9) return "сентябрь";
-            if (month == 10) return "октябрь";
-            if (month == 11) return "ноябрь";
-            if (month == 12) return "декабрь";
-            return "";
         }
     }
 }
